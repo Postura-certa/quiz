@@ -2,13 +2,12 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Quiz Postura Certa - Postura Certa</title>
-<script type='text/javascript'>console.log('PixelYourSite PRO version 8.0.1');</script>
+<title>Quiz Postura Certa - Postura Certa</title>  
 <meta name="description" content="RESPONDA COM ATENÇÃO! VOCÊ SENTE DORES NAS COSTAS, OMBROS OU LOMBAR EM DIFERENTES HORAS DO DIA? SIM NÃO ALERTA PARA A IDADE! VOCÊ TEM MAIS DE 40 ANOS E PERCEBEU QUE AS DORES TEM AUMENTADO? SIM NÃO ALERTA PARA A CORCUNDA! VOCÊ PERCEBEU QUE A SUA POSTURA ESTÁ CADA VEZ&hellip;" />
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 <link rel="canonical" href="https://posturaalinhada.com/quiz-postura-alinhada/" />
 
-<script type="application/ld+json">{"@context" : "//schema.org","@type" : "Organization","name" : "Postura Alinhada","url" : "https:\/\/posturaalinhada.com"}</script>
+<script type="application/ld+json">{"@context" : "//schema.org","@type" : "Organization","name" : "Postura Certa","url" : "https:\/\/posturaalinhada.com"}</script>
 <meta property="og:url" content="//posturaalinhada.com/quiz-postura-alinhada/" />
 <meta property="og:site_name" content="Postura Alinhada" />
 <meta property="og:locale" content="pt_BR" />
@@ -319,3 +318,70 @@ src="https://www.facebook.com/tr?id=132836315545739&ev=PageView&noscript=1"
 </script>
 
 <body oncontextmenu="return false" onkeydown="return false">
+	
+<script>
+var $ = jQuery.noConflict();
+$(document).ready(function() {
+    var page = 'https://postura-certa.com/2/pv';
+    var url_string = window.location.href;
+    var urlparams = new URL(url_string);
+    var src = urlparams.searchParams.get("src");
+    var url = page + '?src=back-pv-' + src;
+    (function(b) {
+    var a = {
+        version: "0.0.1",
+        history_api: typeof history.pushState !== "undefined",
+        init: function() {
+            b.location.hash = "#no-back";
+            a.configure();
+        },
+        hasChanged: function() {
+            if(b.location.hash == "#no-back") {
+                b.location.hash = "#";
+                b.location.href = url;
+            }
+        },
+        checkCompat: function() {
+            if(b.addEventListener) {
+                b.addEventListener("hashchange", a.hasChanged, false);
+            }
+            else {
+                if(b.attachEvent) {
+                    b.attachEvent("onhashchange", a.hasChanged);
+                }
+                else {
+                    b.onhashchange = a.hasChanged;
+                }
+            }
+        },
+        configure: function() {
+            if(b.location.hash == "#no-back") {
+                if(this.history_api) {
+                    history.pushState(null, "", "#");
+                }
+                else {
+                    b.location.hash = "#";
+                    b.location.href = url;
+                }
+            }
+            a.checkCompat();
+            a.hasChanged();
+        }
+    };
+    if(typeof define === "function" && define.amd) {
+        define(function() {
+            return a;
+        });
+    }
+    else {
+        if(typeof module === "object" && module.exports) {
+            module.exports = a;
+        }
+        else {
+            b.noback = a;
+        }
+    }
+    a.init();
+}(window));
+ });
+</script> </div>
